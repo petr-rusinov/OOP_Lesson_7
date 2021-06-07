@@ -20,20 +20,19 @@ int Card::getValue() const
     return value;
 }
 
-ostream& operator<<(ostream& os, const Card& aCard)
+
+ostream& operator << (ostream& out, const Card& card)
 {
-    const string RANKS[] = { "0", "A", "2", "3", "4", "5", "6", "7", "8", "9",
-        "10", "J", "Q", "K" };
-    const string SUITS[] = { "c", "d", "h", "s" };
-
-    if (aCard.m_isFaceUp)
-    {
-        os << RANKS[aCard.m_rank] << SUITS[aCard.m_suit];
-    }
+    const string RANKS[] = { "", "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
+    // символы псевдографики:
+    // \x3 - черви (hearts)
+    // \x4 - буби (diamonds)
+    // \x5 - крести (clubs)
+    // \x6 - пики (spades)
+    const string SUITS[] = { "\x5", "\x6", "\x4", "\x3" };
+    if (card.m_isFaceUp)
+        out << RANKS[card.m_rank] << SUITS[card.m_suit];
     else
-    {
-        os << "XX";
-    }
-
-    return os;
+        out << "XX" << endl;
+    return out;
 }
