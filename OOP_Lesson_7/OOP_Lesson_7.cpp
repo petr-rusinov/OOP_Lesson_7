@@ -1,19 +1,11 @@
-﻿#include <iostream>
-
-/*1 Black Jack*/
-#include <iostream> 
+﻿#include <iostream> 
 #include <vector>
 #include <set> 
-//!-> #include <> and #include ""
-#include <string> //This method is normally used to include standard library header files.
-#include "Game.h" //This method is normally used to include programmer-defined header files.
-//https://stackoverflow.com/questions/21593/what-is-the-difference-between-include-filename-and-include-filename
-
-//!-> #include only .h
-//!-> .hpp
-
+#include <string> 
+#include "Game.h" 
 
 using namespace std;
+
 int main()
 {
     cout << "\t\tWelcome to Blackjack!\n\n";
