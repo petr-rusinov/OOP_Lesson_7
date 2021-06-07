@@ -98,7 +98,10 @@ void Game::play()
     // очищает руки всех игроков
     for (pPlayer = m_players.begin(); pPlayer != m_players.end(); ++pPlayer)
     {
+
         pPlayer->clear();
     }
     m_house.clear();
+    m_deck.populate();
+    m_deck.shuffle();
 }

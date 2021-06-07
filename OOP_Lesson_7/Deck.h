@@ -20,6 +20,7 @@ public:
 
     //дает дополнительные карты игроку
     void additionalCards(GenericPlayer& aGenericPlayer);
+
 };
 
 
