@@ -25,6 +25,7 @@ Game::~Game()
 void Game::play()
 {
     const int startCardCount = 2;
+    system("cls");
     // раздает каждому по две стартовые карты
     vector<Player>::iterator pPlayer;
     for (int i = 0; i < startCardCount; ++i)
@@ -104,4 +105,5 @@ void Game::play()
     m_house.clear();
     m_deck.populate();
     m_deck.shuffle();
+
 }
