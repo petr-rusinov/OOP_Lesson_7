@@ -1,8 +1,8 @@
 #include "Card.h"
 
 using namespace std;
-//!-> default value in cpp
-Card::Card(rank r /*= ACE*/, suit s, bool ifu)
+
+Card::Card(rank r, suit s, bool ifu)
     : m_rank(r), m_suit(s), m_isFaceUp(ifu) {
 }
 

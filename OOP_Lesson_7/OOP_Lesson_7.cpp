@@ -1,6 +1,5 @@
 ﻿#include <iostream> 
 #include <vector>
-#include <set> 
 #include <string> 
 #include "Game.h" 
 
@@ -18,14 +17,12 @@ int main()
     }
 
     vector<string> names;
-    //set<string> names;
     string name;
     for (int i = 0; i < numPlayers; ++i)
     {
         cout << "Enter player name: ";
         cin >> name;
         names.push_back(name);
-        //names.insert(name);
     }
     cout << endl;
 
@@ -39,9 +36,6 @@ int main()
         cin >> again;
     }
 
-    //!-> home task change for with iterrator to range base for
-
-    //!-> templates in h
 
 
     return 0;

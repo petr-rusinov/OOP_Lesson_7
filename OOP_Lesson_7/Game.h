@@ -21,18 +21,3 @@ private:
     House m_house;
     std::vector<Player> m_players;
 };
-
-
-
-
-//template<class T>
-//Game(const T& names)
-//{
-//    for (auto pName = names.begin(); pName != names.end(); ++pName)
-//    {
-//        m_players.push_back(Player(*pName));
-//    }
-//
-//    m_deck.populate();
-//    m_deck.shuffle();
-//}
