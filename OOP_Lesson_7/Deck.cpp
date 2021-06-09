@@ -50,7 +50,6 @@ void Deck::additionalCards(GenericPlayer& aGenericPlayer)
     }
 }
 
-//TODO хорошо бы возвращать bool, чтобы в случае конца колоды обработать эту ситуацию
 
 void Deck::deal(Hand& aHand)
 {

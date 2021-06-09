@@ -1,4 +1,4 @@
-#include "Card.h"
+ï»¿#include "Card.h"
 
 using namespace std;
 
@@ -24,11 +24,11 @@ int Card::getValue() const
 ostream& operator << (ostream& out, const Card& card)
 {
     const string RANKS[] = { "", "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
-    // ñèìâîëû ïñåâäîãðàôèêè:
-    // \x3 - ÷åðâè (hearts)
-    // \x4 - áóáè (diamonds)
-    // \x5 - êðåñòè (clubs)
-    // \x6 - ïèêè (spades)
+    // ÑÐ¸Ð¼Ð²Ð¾Ð»Ñ‹ Ð¿ÑÐµÐ²Ð´Ð¾Ð³Ñ€Ð°Ñ„Ð¸ÐºÐ¸:
+    // \x3 - Ñ‡ÐµÑ€Ð²Ð¸ (hearts)
+    // \x4 - Ð±ÑƒÐ±Ð¸ (diamonds)
+    // \x5 - ÐºÑ€ÐµÑÑ‚Ð¸ (clubs)
+    // \x6 - Ð¿Ð¸ÐºÐ¸ (spades)
     const string SUITS[] = { "\x5", "\x6", "\x4", "\x3" };
     if (card.m_isFaceUp)
         out << RANKS[card.m_rank] << SUITS[card.m_suit];
